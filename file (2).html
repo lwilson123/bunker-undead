@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bunker Undead</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="cv"></canvas>
+<div id="vg"></div>
+<div id="dm"></div>
+<div id="ch"></div>
+
+<div id="hud">
+  <div class="tc"><div id="rt">ROUND 1</div><div id="zl">Zombies: 0</div></div>
+  <div class="bl"><div id="hp">100</div><div id="hbw"><div id="hb"></div></div></div>
+  <div class="br"><div id="am">8 <span class="r">/ 120</span></div><div id="pt">0</div></div>
+  <div id="hint">Hold F to repair</div>
+</div>
+
+<div id="an"><span id="anM">ROUND 1</span><span class="s" id="anS">THEY ARE COMING</span></div>
+
+<div id="start" class="ov">
+  <h1>BUNKER UNDEAD</h1>
+  <h2>Round-Based Survival</h2>
+  <p>Trapped in an abandoned bunker. Boarded windows are all that hold back the horde. Repair the boards, hold the line, and survive as long as you can.</p>
+  <div class="k">
+    <b>WASD</b> Move &middot; <b>Mouse</b> Look &middot; <b>Shift</b> Sprint &middot; <b>Space</b> Jump<br>
+    <b>L-Click</b> Shoot &middot; <b>R</b> Reload &middot; <b>F / E</b> Repair Barricade
+  </div>
+  <button id="startB">CLICK TO PLAY</button>
+  <p style="margin-top:12px;opacity:.6;font-size:13px">(Click locks the mouse. Press ESC to release.)</p>
+</div>
+
+<div id="over" class="ov" style="display:none">
+  <h1>YOU DIED</h1>
+  <div class="st">Reached <b id="fR">Round 1</b></div>
+  <div class="st">Score <b id="fS">0</b></div>
+  <div class="st">Kills <b id="fK">0</b></div>
+  <br>
+  <button id="restB">PLAY AGAIN</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
